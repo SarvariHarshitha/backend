@@ -4,6 +4,12 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array
 import numpy as np
 from PIL import Image
+import os
+
+file_path = "model.h5"
+
+print("Current Working Directory:", os.getcwd())
+print("File Exists:", os.path.exists(file_path))
 
 
 app = Flask(__name__)
